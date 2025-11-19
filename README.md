@@ -1,9 +1,9 @@
-# schoolwebinphp
-
 # BUGEMA UNIVERSITY  
 **DEPARTMENT OF COMPUTING & INFORMATICS**  
 **IT Project Management – Assignment Solution**  
-**Date: 31/10/2025**
+**Date: 31 October 2025**
+
+---
 
 ## Given Data
 
@@ -22,31 +22,23 @@
 
 ---
 
-### a) Network Diagram – Activity on Node (AoN)
+### a) Network Diagram – Activity on Node (AoN)  
+**(Preferred by the Project Manager)**
 
 ```mermaid
 graph TD
-    Start --> A & B & C
-    A --> D
-    B --> E & F
-    C --> G
-    D --> H
+    Start[Start] --> A & B & C
+    A[A<br>Dur=2] --> D[D<br>Dur=4]
+    B[B<br>Dur=3] --> E[E<br>Dur=5]
+    B --> F[F<br>Dur=6]
+    C[C<br>Dur=3] --> G[G<br>Dur=6]
+    D --> H[H<br>Dur=7]
     E --> H
-    G --> I
-    H --> J
+    G --> I[I<br>Dur=8]
+    H --> J[J<br>Dur=3]
     F --> J
     I --> J
-    J --> Finish
+    J --> Finish[Finish]
 
-    A[A(2)]:::act
-    B[B(3)]:::act
-    C[C(3)]:::act
-    D[D(4)]:::act
-    E[E(5)]:::act
-    F[F(6)]:::act
-    G[G(6)]:::act
-    H[H(7)]:::act
-    I[I(8)]:::act
-    J[J(3)]:::act
-
-    classDef act fill:#e1f5fe,stroke:#333,stroke-width:2px;
+    classDef activity fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:black,radius:10px;
+    class A,B,C,D,E,F,G,H,I,J activity
