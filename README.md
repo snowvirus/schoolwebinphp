@@ -22,5 +22,4 @@
 
 ---
 
-### a) Network Diagram – Activity on Node (AoN)  
-**(Preferred by the Project Manage
+### a) Network Diagram – Activity on Node
